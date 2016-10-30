@@ -1,0 +1,18 @@
+<div class="room3-bg mainContent">
+  <div class="map" ui-sref='main.home'>
+    <img src="/img/home/bedroomMap.png" alt="">
+  </div>
+
+  <ul class="room1-ul">
+    <li ng-click="sendHttpRequest()"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+</div>

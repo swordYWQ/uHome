@@ -1,0 +1,130 @@
+angular.module('app.controllers', [])
+
+.controller('loginCtrl', function ($scope,$state,$ionicViewSwitcher) {
+	$scope.login = true;
+	$scope.signSelect = function(){
+		$scope.login = !$scope.login;
+	};
+
+  $scope.loginSys=function () {
+    $state.go('main.home');
+    // $ionicViewSwitcher.nextDirection("forward");
+  }
+  })
+  .controller('mainCtrl', function ($scope,$state,$ionicViewSwitcher) {
+    $scope.name = '管理员';
+
+    $scope.nowModule=1;
+
+    $scope.footerShow = true;
+    $scope.moduleChange=function (module_id,room_id) {
+      // if($scope.nowModule!=module_id){
+      console.log(module_id+'--'+room_id);
+        switch (module_id){
+          case 0:$state.go('login',{reload:true}); break;
+          case 1:
+            switch(room_id){
+              case 1: $state.go('main.room1',{reload:true}); break;
+              case 2: $state.go('main.room2',{reload:true}); break;
+              case 3: $state.go('main.room3',{reload:true}); break;
+              case 4: $state.go('main.room4',{reload:true}); break;
+              case 5: $state.go('main.room5',{reload:true}); break;
+              case 6: $state.go('main.room6',{reload:true}); break;
+              default: $state.go('main.home',{reload:true}); break;
+            }
+            break;
+          case 2: $state.go('main.society',{reload:true}); break;
+          case 3: $state.go('main.life',{reload:true}); break;
+          case 4:  $state.go('main.neighbor',{reload:true}); break;
+          default: $state.go('login',{reload:true}); break;
+        }
+
+
+       /* if(module_id==1){
+          $state.go('main.home',{reload:true});
+        }
+        else if(module_id==2){
+          $state.go('main.society',{reload:true});
+        }
+        else if(module_id==3){
+          $state.go('main.life',{reload:true});
+        }
+        else if(module_id==4){
+          $state.go('main.neighbor',{reload:true});
+        }*/
+        $scope.nowModule=module_id;
+      // }
+    };
+    $scope.footerStatus=function(status){
+      $scope.footerShow =status;
+    };
+    $scope.icon_on=0;
+    $scope.iconChange=function (icon_id) {
+      $scope.icon_on=icon_id;
+    };
+
+    $scope.loginOut=function () {
+
+      $scope.moduleChange(0,0);
+      // $ionicViewSwitcher.nextDirection("back");
+    };
+
+    $scope.footerStatus = function(status,$event){
+      $scope.footerShow = status;
+    }
+  })
+.controller('homeCtrl', function ($scope,$state) {
+  $scope.moduleChange(1);
+
+  $scope.infoState=1;
+  $scope.infoStateChange=function (info_id) {
+    $scope.infoState=info_id;
+  };
+
+  $scope.controlState=1;
+  $scope.controlStateChange=function (control_id) {
+    $scope.controlState=control_id;
+  };
+})
+  .controller('room1Ctrl', function ($scope,$state) {
+    $scope.moduleChange(1,1);
+    
+  })
+
+  .controller('room2Ctrl', function ($scope,$state) {
+    $scope.moduleChange(1,2);
+    
+  })
+
+  .controller('room3Ctrl', function ($scope,$state) {
+    $scope.moduleChange(1,3);
+    
+  })
+
+
+  .controller('room4Ctrl', function ($scope,$state) {
+    $scope.moduleChange(1,4);
+    
+  })
+
+  .controller('room5Ctrl', function ($scope,$state) {
+    $scope.moduleChange(1,5);
+    
+  })
+
+  .controller('room6Ctrl', function ($scope,$state) {
+    $scope.moduleChange(1,6);
+    
+  })
+
+
+.controller('societyCtrl', function ($scope,$state) {
+ $scope.moduleChange(2,0);
+}).controller('lifeCtrl', function ($scope,$state) {
+  $scope.moduleChange(3,0);
+}).controller('neighborCtrl', function ($scope,$state) {
+  $scope.moduleChange(4,0);
+  console.log(11)
+}).controller('roomCtrl', function ($scope,$state) {
+  
+});

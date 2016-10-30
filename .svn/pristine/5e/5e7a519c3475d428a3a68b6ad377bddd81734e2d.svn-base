@@ -1,0 +1,38 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-content scroll="false" class="login-bg">
+  <div class="login-form loginRegister" ng-class="{true:'active',false:''}[login]">
+      <div class="list register">
+        <label class="item item-input account">
+          <input type="text" value="">
+        </label>
+        <label class="item item-input password mt10">
+          <input type="password">
+        </label>
+        <label class="item item-input email mt10">
+          <input type="text">
+        </label>
+        <label class="item item-input phone mt10">
+          <input type="text">
+        </label>
+      </div>
+      <div class="list login">
+        <label class="item item-input account">
+          <input type="text">
+        </label>
+        <label class="item item-input password mt10">
+          <input type="password">
+        </label>
+        <p class="hint mt10">Forgot your password?</p>
+      </div>
+    <button class="register submit button mt10">Create Account</button>
+    <button class="login submit button mt10" ng-click="loginSys()">Sign in</button>
+  </div>
+  <div class="oper">
+    <a ng-click="signSelect()" ng-class="{true:'active',false:''}[login]" class="sign" href="javascript:void(0)"></a>
+    <a class="help" href="javascript:void(0)">Help</a>
+  </div>
+</ion-content>

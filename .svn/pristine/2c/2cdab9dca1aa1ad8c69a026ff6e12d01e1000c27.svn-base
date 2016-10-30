@@ -1,0 +1,58 @@
+<div class="home">
+  <!--左边导航栏-->
+  <div class="home-left-panel">
+    <ul>
+      <li><a class="main-left-menu"></a></li>
+      <li><a class="main-left-users"></a></li>
+      <li><a class="main-left-call"></a></li>
+      <li><a class="main-left-exit"  ng-click="loginOut()" nav-direction="back"></a></li>
+    </ul>
+  </div>
+
+
+  <!--右边内容栏-->
+  <div class="home-right-panel">
+    <!--头部信息栏-->
+    <div class="home-header">
+      <div class="top-logo"></div>
+      <div class="top-date">2016年10月1日</div>
+      <div class="top-icon">
+        <span ng-class="{true:'on',false:''}[icon_on==1]" ng-click="iconChange(1)"><i>2</i></span>
+        <span ng-class="{true:'on',false:''}[icon_on==2]" ng-click="iconChange(2)"></span>
+        <span ng-class="{true:'on',false:''}[icon_on==3]" ng-click="iconChange(3)"></span>
+        <span ng-class="{true:'on',false:''}[icon_on==4]" ng-click="iconChange(4)"></span>
+        <span ng-class="{true:'on',false:''}[icon_on==5]" ng-click="iconChange(5)"></span>
+      </div>
+      <div class="top-music"><img src="../img/home/music.png" alt=""></div>
+      <div class="top-weather"><img src="../img/home/weather.png" alt=""></div>
+    </div>
+
+    <!--内容栏-->
+    <ion-nav-view  name="main" class="home-content"></ion-nav-view>
+    <!--底部浮动切换栏-->
+    <div class="home-footer">
+      <ul>
+        <li ng-class="{true:'home-footer-active',false:''}[nowModule==1]" ng-click="moduleChange(1)"><div class="l"></div><div class="r"></div></li>
+        <li ng-class="{true:'home-footer-active',false:''}[nowModule==2]" ng-click="moduleChange(2)"><div class="l"></div><div class="r"></div></li>
+        <li ng-class="{true:'home-footer-active',false:''}[nowModule==3]" ng-click="moduleChange(3)"><div class="l"></div><div class="r"></div></li>
+        <li ng-class="{true:'home-footer-active',false:''}[nowModule==4]" ng-click="moduleChange(4)"><div class="l"></div><div class="r"></div></li>
+      </ul>
+    </div>
+
+    <div class="welcome-bg">
+
+    </div>
+      <div class="welcome">
+        <p>欢迎您</p>
+        <div class="f_l">
+          <p>尊敬的{{name}}</p>
+          <span>级别：云家会员</span>
+        </div>
+        <div class="f_r">
+          <p>你有一条消息未读</p>
+          <span>来自：物业管理处</span>
+        </div>
+      </div>
+  </div>
+</div>
+

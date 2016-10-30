@@ -1,0 +1,21 @@
+
+<div>
+
+  <div class="home-left-panel">
+
+  </div>
+
+  <div class="home-right-panel">
+  <div class="home-header">
+
+  </div>
+
+  <div ui-view class="home-content">
+
+  </div>
+
+  <div class="home-footer">
+
+  </div>
+  </div>
+</div>

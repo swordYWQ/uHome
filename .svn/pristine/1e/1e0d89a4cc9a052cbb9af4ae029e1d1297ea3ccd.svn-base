@@ -1,0 +1,52 @@
+<div class="home">
+  <!--左边导航栏-->
+  <div class="home-left-panel">
+    <ul>
+      <li><a class="main-left-menu"></a></li>
+      <li><a class="main-left-users"></a></li>
+      <li><a class="main-left-call"></a></li>
+      <li><a class="main-left-exit" ui-sref="login" nav-direction="back"></a></li>
+    </ul>
+  </div>
+
+
+  <!--右边内容栏-->
+  <div class="home-right-panel">
+    <!--头部信息栏-->
+    <div class="home-header">
+      <div class="top-logo"></div>
+      <div class="top-date">2016年10月1日</div>
+      <div class="top-icon"></div>
+      <div class="top-music"></div>
+      <div class="top-weather"></div>
+    </div>
+
+    <!--内容栏-->
+    <ion-nav-view name="home" class="home-content"></ion-nav-view>
+    <!--底部浮动切换栏-->
+    <div class="home-footer">
+      <ul>
+        <li><div class="l"></div><div class="r"></div></li>
+        <li><div class="l"></div><div class="r"></div></li>
+        <li><div class="l"></div><div class="r"></div></li>
+        <li><div class="l"></div><div class="r"></div></li>
+      </ul>
+    </div>
+
+    <div class="welcome-bg">
+      
+    </div>
+      <div class="welcome">
+        <p>欢迎您</p>
+        <div class="f_l">
+          <p>尊敬的{{name}}</p>
+          <span>级别：云家会员</span>
+        </div>
+        <div class="f_r">
+          <p>你有一条消息未读</p>
+          <span>来自：物业管理处</span>
+        </div>
+      </div>
+  </div>
+</div>
+

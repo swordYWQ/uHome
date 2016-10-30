@@ -1,0 +1,35 @@
+/* Empty. Add your own CSS if you like */
+.home-left-panel{
+  float: left;
+  width:50px;
+  height:100%;
+  background: url("../img/home/l_bg_01.png")no-repeat;
+}
+.home-right-panel{
+  float: left;
+  width: 972px;
+  height:100%;
+}
+
+.home-header{
+  width: 100%;
+  height:10%;
+  background: url("../img/home/top_bg.png")no-repeat;
+}
+
+.home-content{
+  /*padding-top:55px;*/
+  width:100%;
+  height:70%;
+}
+
+.home-bg{
+  background: url("../img/home/wel_bg.png")no-repeat;
+  height:100%;
+}
+
+.home-footer{
+  width:100%;
+  height: 20%;
+  background: url("../img/home/zy_11.png")no-repeat;
+}

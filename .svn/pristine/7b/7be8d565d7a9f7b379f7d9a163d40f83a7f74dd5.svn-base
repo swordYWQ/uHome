@@ -1,0 +1,91 @@
+angular.module('app.controllers', [])
+
+//.controller('DashCtrl', function($scope) {})
+//
+//.controller('ChatsCtrl', function($scope, Chats) {
+//  // With the new view caching in Ionic, Controllers are only called
+//  // when they are recreated or on app start, instead of every page change.
+//  // To listen for when this page is active (for example, to refresh data),
+//  // listen for the $ionicView.enter event:
+//  //
+//  //$scope.$on('$ionicView.enter', function(e) {
+//  //});
+//
+//  $scope.chats = Chats.all();
+//  $scope.remove = function(chat) {
+//    Chats.remove(chat);
+//  };
+//})
+//
+//.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+//  $scope.chat = Chats.get($stateParams.chatId);
+//})
+//
+//.controller('AccountCtrl', function($scope) {
+//  $scope.settings = {
+//    enableFriends: true
+//  };
+//  })
+
+.controller('loginCtrl', function ($scope,$state,$ionicViewSwitcher) {
+	$scope.login = true;
+	$scope.signSelect = function(){
+		$scope.login = !$scope.login;
+	};
+
+  $scope.loginSys=function () {
+    $state.go('main.home');
+    $ionicViewSwitcher.nextDirection("forward");
+  }
+  })
+  .controller('mainCtrl', function ($scope,$state,$ionicViewSwitcher) {
+    $scope.name = '管理员';
+
+    $scope.nowModule=1;
+    $scope.footerShow = true;
+    $scope.moduleChange=function (module_id,obj) {
+      if($scope.nowModule!=module_id){
+        if(module_id==1){
+          $state.go('main.home',{reload:true});
+        }
+        else if(module_id==2){
+          $state.go('main.society',{reload:true});
+        }
+        else if(module_id==3){
+          $state.go('main.life',{reload:true});
+        }
+        else if(module_id==4){
+          $state.go('main.neighbor',{reload:true});
+        }
+        $scope.nowModule=module_id;
+      }
+    };1
+    $scope.footerStatus=function(status){
+      $scope.footerShow =status;
+    }
+    $scope.icon_on=0;
+    $scope.iconChange=function (icon_id) {
+      $scope.icon_on=icon_id;
+    };
+
+    $scope.loginOut=function () {
+     $state.go('login');
+      $ionicViewSwitcher.nextDirection("back");
+    }
+
+    $scope.footerStatus = function(status,$event){
+      $scope.footerShow = status;
+      console.log($scope.footerShow);
+    }
+  })
+.controller('homeCtrl', function ($scope,$state) {
+  $scope.moduleChange(1);
+})
+.controller('societyCtrl', function ($scope,$state) {
+ $scope.moduleChange(2);
+}).controller('lifeCtrl', function ($scope,$state) {
+  $scope.moduleChange(3);
+}).controller('neighborCtrl', function ($scope,$state) {
+  $scope.moduleChange(4);
+  console.log(11)
+});

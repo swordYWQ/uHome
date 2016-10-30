@@ -1,0 +1,63 @@
+angular.module('app.controllers', [])
+
+//.controller('DashCtrl', function($scope) {})
+//
+//.controller('ChatsCtrl', function($scope, Chats) {
+//  // With the new view caching in Ionic, Controllers are only called
+//  // when they are recreated or on app start, instead of every page change.
+//  // To listen for when this page is active (for example, to refresh data),
+//  // listen for the $ionicView.enter event:
+//  //
+//  //$scope.$on('$ionicView.enter', function(e) {
+//  //});
+//
+//  $scope.chats = Chats.all();
+//  $scope.remove = function(chat) {
+//    Chats.remove(chat);
+//  };
+//})
+//
+//.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+//  $scope.chat = Chats.get($stateParams.chatId);
+//})
+//
+//.controller('AccountCtrl', function($scope) {
+//  $scope.settings = {
+//    enableFriends: true
+//  };
+//  })
+
+.controller('loginCtrl', function ($scope,$state) {
+	$scope.login = true;
+	$scope.signSelect = function(){
+		$scope.login = !$scope.login;
+	}
+  })
+  .controller('mainCtrl', function ($scope,$state) {
+    $scope.name = '管理员';
+
+    $scope.nowModule=1;
+    $scope.moduleChange=function (module_id) {
+      $scope.nowModule=module_id;
+    }
+    $scope.$watch('nowModule',function (newValue,oldValue) {
+      if(newValue&&newValue!=oldValue){
+        switch (newValue){
+          case 1: $state.go('main.home');break;
+          case 2: $state.go('main.society');break;
+          case 3: $state.go('main.life');break;
+          case 4: $state.go('main.neighbor');break;
+        }
+      }
+    });
+
+    $scope.icon_on=0;
+    $scope.iconChange=function (icon_id) {
+      $scope.icon_on=icon_id;
+    };
+
+
+  })
+.controller('homeCtrl', function ($scope,$state) {
+
+});

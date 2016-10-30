@@ -1,0 +1,15 @@
+<div class="room1-bg mainContent">
+  <div class="map" ui-sref='main.home'>
+    <img src="/img/home/bedroomMap.png" alt="">
+  </div>
+  <ul class="room1-ul">
+    <li ng-repeat="item in switchConfig" ng-class="{true:'open',false:''}[item.state]" ng-click="clickHandle(item)">
+      <label  class="room-switch-title">{{item.name}}</label>
+    </li>
+    <!--<li></li>-->
+    <!--<li></li>-->
+    <!--<li></li>-->
+    <!--<li></li>-->
+  </ul>
+
+</div>

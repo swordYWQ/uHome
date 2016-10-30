@@ -1,0 +1,29 @@
+<div class="home">
+  <!--左边导航栏-->
+  <div class="home-left-panel">
+    <ul>
+      <li><a class="main-left-menu"></a></li>
+      <li><a class="main-left-users"></a></li>
+      <li><a class="main-left-call"></a></li>
+      <li><a class="main-left-exit" ui-sref="login" nav-direction="back"></a></li>
+    </ul>
+  </div>
+  <!--右边内容栏-->
+  <div class="home-right-panel">
+    <!--头部信息栏-->
+    <div class="home-header">
+
+    </div>
+    <!--内容栏-->
+    <div ui-view class="home-content">
+
+    </div>
+
+    <!--底部浮动切换栏-->
+    <div class="home-footer">
+
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,62 @@
+ <div class="home-bg">
+
+
+   <ul class="room-ul">
+     <li>
+       <ul class="info brn">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     </li>
+     <li>
+       <ul class="info brn">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     </li>
+     <li>
+       <ul class="info brn">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     </li>
+     <li>
+       <ul class="info brn">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     </li>
+     <li>
+       <ul class="info brn">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     </li>
+     <li>
+       <ul class="info brn">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     </li>
+   </ul>
+
+  </div>
+

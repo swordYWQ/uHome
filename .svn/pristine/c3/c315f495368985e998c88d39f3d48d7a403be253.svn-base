@@ -1,0 +1,92 @@
+ <div class="home-bg">
+
+
+   <ul class="room-ul">
+     <li>
+       <ul class="info">
+         <li ng-class="{true:'active',false:''}[infoState==1]" ng-click="infoStateChange(1)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==2]" ng-click="infoStateChange(2)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==3]" ng-click="infoStateChange(3)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==4]" ng-click="infoStateChange(4)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==5]" ng-click="infoStateChange(5)"></li>
+       </ul>
+       <div class="control active-{{controlState}}">
+         <a class="zm"  ng-click="controlStateChange(1)"></a><!--照明-->
+         <a class="wx"  ng-click="controlStateChange(2)"></a><!--温馨-->
+         <a class="jn"  ng-click="controlStateChange(3)"></a><!--节能-->
+       </div>
+     </li>
+     <li>
+       <ul class="info">
+         <li ng-class="{true:'active',false:''}[infoState==1]" ng-click="infoStateChange(1)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==2]" ng-click="infoStateChange(2)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==3]" ng-click="infoStateChange(3)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==4]" ng-click="infoStateChange(4)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==5]" ng-click="infoStateChange(5)"></li>
+       </ul>
+       <div class="control active-{{controlState}}">
+         <a class="zm"  ng-click="controlStateChange(1)"></a><!--照明-->
+         <a class="wx"  ng-click="controlStateChange(2)"></a><!--温馨-->
+         <a class="jn"  ng-click="controlStateChange(3)"></a><!--节能-->
+       </div>
+     </li>
+     <li>
+       <ul class="info">
+         <li ng-class="{true:'active',false:''}[infoState==1]" ng-click="infoStateChange(1)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==2]" ng-click="infoStateChange(2)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==3]" ng-click="infoStateChange(3)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==4]" ng-click="infoStateChange(4)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==5]" ng-click="infoStateChange(5)"></li>
+       </ul>
+       <div class="control active-{{controlState}}">
+         <a class="zm"  ng-click="controlStateChange(1)"></a><!--照明-->
+         <a class="wx"  ng-click="controlStateChange(2)"></a><!--温馨-->
+         <a class="jn"  ng-click="controlStateChange(3)"></a><!--节能-->
+       </div>
+     </li>
+     <li>
+       <ul class="info">
+         <li ng-class="{true:'active',false:''}[infoState==1]" ng-click="infoStateChange(1)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==2]" ng-click="infoStateChange(2)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==3]" ng-click="infoStateChange(3)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==4]" ng-click="infoStateChange(4)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==5]" ng-click="infoStateChange(5)"></li>
+       </ul>
+       <div class="control active-{{controlState}}">
+         <a class="zm"  ng-click="controlStateChange(1)"></a><!--照明-->
+         <a class="wx"  ng-click="controlStateChange(2)"></a><!--温馨-->
+         <a class="jn"  ng-click="controlStateChange(3)"></a><!--节能-->
+       </div>
+     </li>
+     <li>
+       <ul class="info">
+         <li ng-class="{true:'active',false:''}[infoState==1]" ng-click="infoStateChange(1)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==2]" ng-click="infoStateChange(2)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==3]" ng-click="infoStateChange(3)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==4]" ng-click="infoStateChange(4)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==5]" ng-click="infoStateChange(5)"></li>
+       </ul>
+       <div class="control active-{{controlState}}">
+         <a class="zm"  ng-click="controlStateChange(1)"></a><!--照明-->
+         <a class="wx"  ng-click="controlStateChange(2)"></a><!--温馨-->
+         <a class="jn"  ng-click="controlStateChange(3)"></a><!--节能-->
+       </div>
+     </li>
+     <li>
+       <ul class="info">
+         <li ng-class="{true:'active',false:''}[infoState==1]" ng-click="infoStateChange(1)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==2]" ng-click="infoStateChange(2)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==3]" ng-click="infoStateChange(3)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==4]" ng-click="infoStateChange(4)"></li>
+         <li ng-class="{true:'active',false:''}[infoState==5]" ng-click="infoStateChange(5)"></li>
+       </ul>
+       <div class="control active-{{controlState}}">
+         <a class="zm"  ng-click="controlStateChange(1)"></a><!--照明-->
+         <a class="wx"  ng-click="controlStateChange(2)"></a><!--温馨-->
+         <a class="jn"  ng-click="controlStateChange(3)"></a><!--节能-->
+       </div>
+     </li>
+   </ul>
+
+  </div>
+

@@ -1,0 +1,24 @@
+<div class="room3-bg mainContent">
+  <div class="map" ui-sref='main.home'>
+    <img src="/img/home/bedroomMap.png" alt="">
+  </div>
+  <div class="room-header">
+    <label class="room-header-lab">主卧</label>
+    <label class="room-header-lab">Master Bedroom</label>
+  </div>
+  <ul class="room3-ul">
+    <!--<li ng-click="sendHttpRequest()"></li>-->
+    <!--<li ></li>-->
+    <!--<li ></li>-->
+    <!--<li ></li>-->
+    <!--<li ></li>-->
+    <!--<li ></li>-->
+    <!--<li ></li>-->
+    <!--<li ></li>-->
+    <!--<li ></li>-->
+    <li ng-repeat="item in switchConfig" ng-class="{true:'open',false:''}[item.state]" ng-click="clickHandle(item)">
+      <label  class="room-switch-title">{{item.name}}</label>
+    </li>
+  </ul>
+
+</div>

@@ -1,0 +1,151 @@
+/* Empty. Add your own CSS if you like */
+
+.f_l{float:left;}
+.f_r{float:right;}
+.home{
+  display:-webkit-box;
+}
+.home-left-panel{
+  /*float: left;*/
+  /*display: inline-block;*/
+  width:50px;
+  height:100%;
+  background: url("../img/home/l_bg_01.png")no-repeat;
+  background-size:100% 100%;
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  opacity: 0.8;
+}
+.home-right-panel{
+  /*display:inline-block;*/
+  width:100%;
+  height:100%;
+  /*margin-left: 50px;*/
+}
+
+.home-header{
+  width: 100%;
+  height:10%;
+  background: url("../img/home/top_bg.png")no-repeat;
+  background-size:100% 100%;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  position: absolute;
+  /*left: 50px;*/
+  top:0;
+  opacity: 0.5;
+  z-index: 4;
+}
+
+.home-content{
+  /*padding-top:55px;*/
+  width:100%;
+  height:100%;
+}
+
+.home-bg{
+  background: url("../img/home/bg.png")no-repeat;
+  background-size:100% 100%;
+  height:100%;
+}
+
+.home-footer{
+  width:100%;
+  height: 20%;
+  /*background: url("../img/home/zy_11.png")no-repeat;*/
+  background: #000000;
+  background-size:100% 100%;
+  opacity:0.5;
+  display: -webkit-flex;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  z-index: 4;
+}
+.welcome-bg{
+  background: url("../img/home/wel_bg.png");
+  width:100%;
+  height:100%;
+  background-size:100% 100%;
+  -webkit-filter: blur(10px);
+  display: -webkit-flex;
+  position: absolute;
+  /*left:0;*/
+  top:0;
+  z-index: 5;
+  -webkit-animation: fadeInOut 5s ease forwards;
+}
+
+.welcome{
+  position: fixed;top:50%;left:50%;margin-left: -300px;margin-top:-135px;
+  padding:50px 60px 50px 100px;
+  width:600px;height:270px;-webkit-box-sizing: border-box;
+  background: url(../img/welcome_05.png) no-repeat;
+  background-size:100% 100%;
+  color:#fff;font-size: 24px;
+  -webkit-animation: fadeInOut 5s ease forwards;
+  z-index: 6;
+}
+.welcome div{
+  margin-top: 30px;;
+}
+.welcome div span{
+  margin-top: 12px;font-size: 16px;
+}
+@-webkit-keyframes fadeInOut{
+  0%{opacity: 0;-webkit-transform:translateY(30px);}
+  20%{opacity: 1;-webkit-transform:translateY(0px);}
+  60%{opacity: 1;}
+  100%{opacity: 0;display: none;visibility:hidden;}
+}
+.main-left-menu{
+  background: url("../img/home/welcome_02.png")no-repeat;
+  background-size:100% 100%;
+  width:50px;
+  height:50px;
+  display: block;
+}
+.main-left-users{
+  background: url("../img/home/welcome_08.png")no-repeat;
+  background-size:100% 100%;
+  width:50px;
+  height:50px;
+  margin-top:50px;
+  display: block;
+}
+.main-left-call{
+  background: url("../img/home/welcome_10.png")no-repeat;
+  background-size:100% 100%;
+  width:50px;
+  height:50px;
+  margin-top:50px;
+  display: block;
+}
+.main-left-exit{
+  background: url("../img/home/welcome_13.png")no-repeat;
+  background-size:100% 100%;
+  width:50px;
+  height:50px;
+  margin-top:50px;
+  display: block;
+}
+
+
+.top-logo{
+  width:130px;
+  height:30px;
+  background: url("../img/home/logo.png")no-repeat;
+  background-size: 100% 100%;
+}
+.top-date{
+
+}
+.top-icon{
+
+}
+.top-music{
+
+}
+.top-weather{
+
+}

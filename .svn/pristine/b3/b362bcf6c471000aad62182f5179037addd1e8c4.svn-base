@@ -1,0 +1,10 @@
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+[nav-view="cached"], [nav-bar="cached"]{
+    display: none !important;
+}

@@ -1,0 +1,77 @@
+angular.module('app.controllers', [])
+
+//.controller('DashCtrl', function($scope) {})
+//
+//.controller('ChatsCtrl', function($scope, Chats) {
+//  // With the new view caching in Ionic, Controllers are only called
+//  // when they are recreated or on app start, instead of every page change.
+//  // To listen for when this page is active (for example, to refresh data),
+//  // listen for the $ionicView.enter event:
+//  //
+//  //$scope.$on('$ionicView.enter', function(e) {
+//  //});
+//
+//  $scope.chats = Chats.all();
+//  $scope.remove = function(chat) {
+//    Chats.remove(chat);
+//  };
+//})
+//
+//.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+//  $scope.chat = Chats.get($stateParams.chatId);
+//})
+//
+//.controller('AccountCtrl', function($scope) {
+//  $scope.settings = {
+//    enableFriends: true
+//  };
+//  })
+
+.controller('loginCtrl', function ($scope,$state) {
+	$scope.login = true;
+	$scope.signSelect = function(){
+		$scope.login = !$scope.login;
+	};
+
+  $scope.loginSys=function () {
+    $state.go('main.home');
+  }
+  })
+  .controller('mainCtrl', function ($scope,$state) {
+    $scope.name = '管理员';
+
+    $scope.nowModule=1;
+    $scope.moduleChange=function (module_id) {
+      if($scope.nowModule!=module_id){
+        if(module_id==1){
+          $state.go('main.home',{reload:true});
+        }
+        else if(module_id==2){
+          $state.go('main.society',{reload:true});
+        }
+        else if(module_id==3){
+          $state.go('main.life',{reload:true});
+        }
+        else if(module_id==4){
+          $state.go('main.neighbor',{reload:true});
+        }
+        $scope.nowModule=module_id;
+      }
+    };
+
+    $scope.icon_on=0;
+    $scope.iconChange=function (icon_id) {
+      $scope.icon_on=icon_id;
+    };
+
+    $scope.loginOut=function () {
+     $state.go('login');
+    }
+
+  })
+.controller('homeCtrl', function ($scope,$state) {
+
+})
+.controller('societyCtrl', function ($scope,$state) {
+
+});

@@ -1,0 +1,21 @@
+<div>
+  <!--左边导航栏-->
+  <div class="home-left-panel">
+
+  </div>
+  <!--右边内容栏-->
+  <div class="home-right-panel">
+    <!--头部信息栏-->
+    <div class="home-header">
+
+    </div>
+    <!--内容栏-->
+    <div ui-view class="home-content">
+
+    </div>
+    <!--底部切换栏-->
+    <div class="home-footer">
+
+    </div>
+  </div>
+</div>
