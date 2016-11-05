@@ -138,11 +138,12 @@ angular.module('app.controllers', [])
 
 
     $scope.switchConfig = [
-      {index: 1, name: '窗帘', device_id: '0B141152', state: false},  //儿童房窗帘|小孩房窗帘|小孩房纱帘
-      {index: 2, name: '台灯', device_id: '022C0FB7', state: false},  //儿童房灯|小孩房灯|儿童房阳台灯|小孩房阳台灯
-      {index: 3, name: '主灯', device_id: '021C0FB7', state: false},  //儿童房灯|小孩房灯|儿童房主灯|小孩房主灯
-      {index: 4, name: '空调', device_id: '', state: false},
-      {index: 5, name: '电器', device_id: '', state: false}
+      {index: 1, name: '主灯', device_id: '021C1608', state: false},  //儿童房窗帘|小孩房窗帘|小孩房纱帘
+      {index: 2, name: '阳台灯', device_id: '022C1608', state: false},  //儿童房灯|小孩房灯|儿童房阳台灯|小孩房阳台灯
+      {index: 3, name: '灯带', device_id: '024C1608', state: false},  //儿童房灯|小孩房灯|儿童房主灯|小孩房主灯
+      {index: 4, name: '红外转发器', device_id: '7600014C', state: false},
+      {index: 5, name: '布帘', device_id: '0B141152', state: false},
+      {index: 6, name: '纱帘', device_id: '0B241152', state: false},//
     ];
     $scope.switchState = {
       open: '00ff',

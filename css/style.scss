@@ -863,18 +863,18 @@ body {
 /*窗帘*/
 .curtain {
   position: absolute;
-  background-position: -84px -265px;
+  background-position: -82px -265px;
   &.open {
-    background-position: -84px -203px;
+    background-position: -82px -203px;
   }
 }
 
 /*风扇 空调*/
 .fans {
   position: absolute;
-  background-position: 0 -265px;
+  background-position: 3px -265px;
   &.open {
-    background-position: 0 -203px;
+    background-position: 3px -203px;
   }
 }
 
@@ -882,9 +882,9 @@ body {
 .lamp {
   position: absolute;
 
-  background-position: -126px -265px;
+  background-position: -124px -265px;
   &.open {
-    background-position: -126px -203px;;
+    background-position: -124px -203px;;
   }
 }
 
@@ -906,9 +906,10 @@ body {
     height: 100%;
     width: 100%;
     li {
-      background: url("../img/home/spirit.png");
+      background-image: url("../img/home/spirit.png");
       width: 46px;
       height: 47px;
+      @extend .lamp;
       .room-switch-title {
         color: #FFF;
         font-family: '微软雅黑';
@@ -918,6 +919,8 @@ body {
         position: absolute;
         text-align: center;
         top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
     }
@@ -925,9 +928,6 @@ body {
       @extend .curtain;
       top: 230px;
       left: 170px;
-    }
-    li:nth-child(1).open {
-      background-position: -84px -207px;
     }
     li:nth-child(2) {
       @extend .lamp;
